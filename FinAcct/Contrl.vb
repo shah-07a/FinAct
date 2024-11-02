@@ -55,109 +55,12 @@ Module Contrl
 
     Public Sub FinActSqlConn()
         Try
-            '===The Following Connection Strings are used for Login Qifar@Time1
-            ''FinActConn = New SqlConnection("Server=qifar-2880-b-1\SQLEXPRESS,1028;Uid=Qifar@Time1;Pwd=mohd@786rafiqhcl;database=FinAct07") ' connection string for Ms-Sql Express
-            ''FinActConn1 = New SqlConnection("Server=qifar-2880-b-1\SQLEXPRESS,1028;Uid=Qifar@Time1;Pwd=mohd@786rafiqhcl;database=FinAct07") 'connection string for Ms-Sql Express
-            ''FinActConn2 = New SqlConnection("Server=qifar-2880-b-1\SQLEXPRESS,1028;Uid=Qifar@Time1;Pwd=mohd@786rafiqhcl;database=FinAct07") 'connection string for Ms-Sql Express
-            ''FinActConn3 = New SqlConnection("Server=qifar-2880-b-1\SQLEXPRESS,1028;Uid=Qifar@Time1;Pwd=mohd@786rafiqhcl;database=FinAct07") 'connection string for Ms-Sql Express
-            ''FinactOdbcCon = New Odbc.OdbcConnection("Driver={SQL Native Client};Server=qifar-2880-b-1\sqlexpress,1028;database=FinAct07;Uid=Qifar@Time1;Pwd=mohd@786rafiqhcl;") ';Uid=sa;Pwd=sa;
-            ''FinactOdbcCon1 = New Odbc.OdbcConnection("Driver={SQL Native Client};Server=qifar-2880-b-1\sqlexpress,1028;database=FinAct07;Uid=Qifar@Time1;Pwd=mohd@786rafiqhcl;") ';Uid=sa;Pwd=sa;
-
-            '===The Following Connection Strings are used for Login Qifar@Time2
-            '' FinActConn = New SqlConnection("Server=qifar-2880-b-1\SQLEXPRESS,1030;Uid=Qifar@Time2;Pwd=qifar@time2user;database=FinAct07") ' connection string for Ms-Sql Express
-            ''FinActConn1 = New SqlConnection("Server=qifar-2880-b-1\SQLEXPRESS,1030;Uid=Qifar@Time2;Pwd=qifar@time2user;database=FinAct07") 'connection string for Ms-Sql Express
-            ''FinActConn2 = New SqlConnection("Server=qifar-2880-b-1\SQLEXPRESS,1030;Uid=Qifar@Time2;Pwd=qifar@time2user;database=FinAct07") 'connection string for Ms-Sql Express
-            ''FinActConn3 = New SqlConnection("Server=qifar-2880-b-1\SQLEXPRESS,1030;Uid=Qifar@Time2;Pwd=qifar@time2user;database=FinAct07") 'connection string for Ms-Sql Express
-            ''FinactOdbcCon = New Odbc.OdbcConnection("Driver={SQL Native Client};Server=qifar-2880-b-1\sqlexpress,1030;database=FinAct07;Uid=Qifar@Time2;Pwd=qifar@time2user;") ';Uid=sa;Pwd=sa;
-            ''FinactOdbcCon1 = New Odbc.OdbcConnection("Driver={SQL Native Client};Server=qifar-2880-b-1\sqlexpress,1030;database=FinAct07;Uid=Qifar@Time2;Pwd=qifar@time2user;") ';Uid=sa;Pwd=sa;
-
-            '===The Following Connection Strings are used for Login in Time Rubber for Computer Name Server
-            ''FinActConn = New SqlConnection("Server=Server\SQLEXPRESS,1085;Uid=Qifar@Time2;Pwd=qifar@time2user;database='" & (Db_FinAct) & "'") ' connection string for Ms-Sql Express
-            ''FinActConn1 = New SqlConnection("Server=Server\SQLEXPRESS,1085;Uid=Qifar@Time2;Pwd=qifar@time2user;database='" & (Db_FinAct) & "'") 'connection string for Ms-Sql Express
-            ''FinActConn2 = New SqlConnection("Server=Server\SQLEXPRESS,1085;Uid=Qifar@Time2;Pwd=qifar@time2user;database='" & (Db_FinAct) & "'") 'connection string for Ms-Sql Express
-            ''FinActConn3 = New SqlConnection("Server=Server\SQLEXPRESS,1085;Uid=Qifar@Time2;Pwd=qifar@time2user;database='" & (Db_FinAct) & "'") 'connection string for Ms-Sql Express
-            ''FinactOdbcCon = New Odbc.OdbcConnection("Driver={SQL Native Client};Server=Server\sqlexpress,1085;database=" & (Db_FinAct) & ";Uid=Qifar@Time2;Pwd=qifar@time2user;") ';Uid=sa;Pwd=sa;
-            ''FinactOdbcCon1 = New Odbc.OdbcConnection("Driver={SQL Native Client};Server=Server\sqlexpress,1085;database=" & (Db_FinAct) & ";Uid=Qifar@Time2;Pwd=qifar@time2user;") ';Uid=sa;Pwd=sa;
-
-            'The Following Connection Strings are used for Login in Time Rubber for Computer Name Server
-            '========================
-            'FinActConn = New SqlConnection("Server=Server\SQLEXPRESS,1030;Uid=Qifar@Time2;Pwd=qifar@time2user;database='" & (Db_FinAct) & "'") ' connection string for Ms-Sql Express
-            'FinActConn1 = New SqlConnection("Server=Server\SQLEXPRESS,1030;Uid=Qifar@Time2;Pwd=qifar@time2user;database='" & (Db_FinAct) & "'") ' connection string for Ms-Sql Express
-            'FinActConn2 = New SqlConnection("Server=Server\SQLEXPRESS,1030;Uid=Qifar@Time2;Pwd=qifar@time2user;database='" & (Db_FinAct) & "'") ' connection string for Ms-Sql Express
-            'FinActConn3 = New SqlConnection("Server=Server\SQLEXPRESS,1030;Uid=Qifar@Time2;Pwd=qifar@time2user;database='" & (Db_FinAct) & "'") ' connection string for Ms-Sql Express
-            'FinactOdbcCon = New Odbc.OdbcConnection("Driver={SQL Server Native Client 10.0};Server=Server\SQLEXPRESS,1030;database=" & (Db_FinAct) & ";Uid=Qifar@Time2;Pwd=qifar@time2user;") ';Uid=sa;Pwd=sa;
-            'FinactOdbcCon1 = New Odbc.OdbcConnection("Driver={SQL Server Native Client 10.0};Server=Server\SQLEXPRESS,1030;database=" & (Db_FinAct) & ";Uid=Qifar@Time2;Pwd=qifar@time2user;") ';Uid=sa;Pwd=sa;
-            '==================================================
-            FinActConn = New SqlConnection("Server='" & (SqlServerName) & "';Uid=jonnis;Pwd=mohd@786#jonni;database='" & (Db_FinAct) & "'") ' connection string for Ms-Sql Express
-            FinActConn1 = New SqlConnection("Server='" & (SqlServerName) & "';Uid=jonnis;Pwd=mohd@786#jonni;database='" & (Db_FinAct) & "'") ' connection string for Ms-Sql Express
-            FinActConn2 = New SqlConnection("Server='" & (SqlServerName) & "';Uid=jonnis;Pwd=mohd@786#jonni;database='" & (Db_FinAct) & "'") ' connection string for Ms-Sql Express
-            FinActConn3 = New SqlConnection("Server='" & (SqlServerName) & "';Uid=jonnis;Pwd=mohd@786#jonni;database='" & (Db_FinAct) & "'") ' connection string for Ms-Sql Express
-            ' FinactOdbcCon = New Odbc.OdbcConnection("Driver={SQL Server Native Client 10.0};Server=" & (SqlServerName) & ";database=" & (Db_FinAct) & ";Uid=jonnis;Pwd=mohd@786#jonni;") ';Uid=sa;Pwd=sa;
-            ' FinactOdbcCon1 = New Odbc.OdbcConnection("Driver={SQL Server Native Client 10.0};Server=" & (SqlServerName) & ";database=" & (Db_FinAct) & ";Uid=jonnis;Pwd=mohd@786#jonni;") ';Uid=sa;Pwd=sa;
-            ''FinActConn = New SqlConnection("Data Source=192.168.1.1\GR_SERVER\EZEESQLEXP,1042;Initial Catalog=Finact10;User ID=Qifar@Time2;Password=qifar@time2user;")
-            '==================================================
-            '===TIME INDIA SETTING FOR MSSQL EXPRESS 2005
-            ''FinactOdbcCon = New Odbc.OdbcConnection("Driver={SQL Native Client};Server=" & (SqlServerName) & ";database=" & (Db_FinAct) & ";Uid=Qifar@Time2;Pwd=qifar@time2user;") ';Uid=sa;Pwd=sa;
-            ''FinactOdbcCon1 = New Odbc.OdbcConnection("Driver={SQL Native Client};Server=" & (SqlServerName) & ";database=" & (Db_FinAct) & ";Uid=Qifar@Time2;Pwd=qifar@time2user;") ';Uid=sa;Pwd=sa;
-            '========================
-            ' FinActConn = New SqlConnection("Data Source=203.134.217.254,49157;Network Library=DBMSSOCN;Initial Catalog=Finact10;User ID=Qifar@Time2;Password=qifar@time2user;")
-            ' ''********************************************
-            '' ''***Following connection strings are for attached db file
-
-            ''Dim strngcon As String = GetSqlDB()
-            ''FinActConn = New SqlConnection(strngcon)
-            ''FinActConn1 = New SqlConnection(strngcon)
-            ''FinActConn2 = New SqlConnection(strngcon)
-            ''FinActConn3 = New SqlConnection(strngcon)
-            ''FinactOdbcCon = New Odbc.OdbcConnection("Driver={SQL Native Client};Server=.\sqlexpress;Database=FinAct07;Trusted_Connection=yes;")
-            ''FinactOdbcCon1 = New Odbc.OdbcConnection("Driver={SQL Native Client};Server=.\sqlexpress;Database=FinAct07;Trusted_Connection=yes;")
-            'FinactOdbcCon = New Odbc.OdbcConnection("Driver={SQL Native Client};Server=.\SQLExpress;AttachDbFilename=" & Application.StartupPath & "\Finact07.MDF;Trusted_Connection=yes;")
-            'FinactOdbcCon1 = New Odbc.OdbcConnection("Driver={SQL Native Client};Server=.\SQLExpress;AttachDbFilename=" & Application.StartupPath & "\Finact07.MDF;Trusted_Connection=yes;")
-
-            '-========================================================================================================
-            'VISTA COMPETIBAL CONNECTIONS
-            '========================
-            '===The Following Connection Strings are used for Login Qifar@Time2
-            ''FinActConn = New SqlConnection("Server=Qifar_Info_786\SQLEXPRESS,1030;Uid=Qifar@Time1;Pwd=qifar@time2user;database='" & (Db_FinAct) & "'") ' connection string for Ms-Sql Express
-            ''FinActConn1 = New SqlConnection("Server=Qifar_Info_786\SQLEXPRESS,1030;Uid=Qifar@Time1;Pwd=qifar@time2user;database='" & (Db_FinAct) & "'") 'connection string for Ms-Sql Express
-            ''FinActConn2 = New SqlConnection("Server=Qifar_Info_786\SQLEXPRESS,1030;Uid=Qifar@Time1;Pwd=qifar@time2user;database='" & (Db_FinAct) & "'") 'connection string for Ms-Sql Express
-            ''FinActConn3 = New SqlConnection("Server=Qifar_Info_786\SQLEXPRESS,1030;Uid=Qifar@Time1;Pwd=qifar@time2user;database='" & (Db_FinAct) & "'") 'connection string for Ms-Sql Express
-            ''FinactOdbcCon = New Odbc.OdbcConnection("Driver={SQL Native Client};Server=Qifar_Info_786\sqlexpress,1030;database=" & (Db_FinAct) & ";Uid=Qifar@Time1;Pwd=qifar@time2user;") ';Uid=sa;Pwd=sa;
-            ''FinactOdbcCon1 = New Odbc.OdbcConnection("Driver={SQL Native Client};Server=Qifar_Info_786\sqlexpress,1030;database=" & (Db_FinAct) & ";Uid=Qifar@Time1;Pwd=qifar@time2user;") ';Uid=sa;Pwd=sa;
-            '========================
-
-            ''FinActConn = New SqlConnection("Server=Qifar_Info_786\SQLEXPRESS,1030;Uid=Qifar@Time1;Pwd=qifar@time2user;database=TempFinact07") ' connection string for Ms-Sql Express
-            ''FinActConn1 = New SqlConnection("Server=Qifar_Info_786\SQLEXPRESS,1030;Uid=Qifar@Time1;Pwd=qifar@time2user;database=TempFinact07") 'connection string for Ms-Sql Express
-            ''FinActConn2 = New SqlConnection("Server=Qifar_Info_786\SQLEXPRESS,1030;Uid=Qifar@Time1;Pwd=qifar@time2user;database=TempFinact07") 'connection string for Ms-Sql Express
-            ''FinActConn3 = New SqlConnection("Server=Qifar_Info_786\SQLEXPRESS,1030;Uid=Qifar@Time1;Pwd=qifar@time2user;database=TempFinact07") 'connection string for Ms-Sql Express
-            ''FinactOdbcCon = New Odbc.OdbcConnection("Driver={SQL Native Client};Server=Qifar_Info_786\sqlexpress,1030;database=TempFinact07;Uid=Qifar@Time1;Pwd=qifar@time2user;") ';Uid=sa;Pwd=sa;
-            ''FinactOdbcCon1 = New Odbc.OdbcConnection("Driver={SQL Native Client};Server=Qifar_Info_786\sqlexpress,1030;database=TempFinact07;Uid=Qifar@Time1;Pwd=qifar@time2user;") ';Uid=sa;Pwd=sa;
-
-            '========================
-            'LTG Connection Accounts
-            '=======================
-            ''FinActConn = New SqlConnection("Server=.\SQLEXPRESS;Uid=Qifar@Time1;Pwd=qifar@time2user;database=MsSql08_FinAct07") ' connection string for Ms-Sql Express
-            ''FinActConn1 = New SqlConnection("Server=.\SQLEXPRESS;Uid=Qifar@Time1;Pwd=qifar@time2user;database=MsSql08_FinAct07") ' connection string for Ms-Sql Express
-            ''FinActConn2 = New SqlConnection("Server=.\SQLEXPRESS;Uid=Qifar@Time1;Pwd=qifar@time2user;database=MsSql08_FinAct07") ' connection string for Ms-Sql Express
-            ''FinActConn3 = New SqlConnection("Server=.\SQLEXPRESS;Uid=Qifar@Time1;Pwd=qifar@time2user;database=MsSql08_FinAct07") ' connection string for Ms-Sql Express
-            ''FinactOdbcCon = New Odbc.OdbcConnection("Driver={SQL Native Client};Server=.\sqlexpress;database=MsSql08_FinAct07;Uid=Qifar@Time1;Pwd=qifar@time2user;") ';Uid=sa;Pwd=sa;
-            ''FinactOdbcCon1 = New Odbc.OdbcConnection("Driver={SQL Native Client};Server=.\sqlexpress;database=MsSql08_FinAct07;Uid=Qifar@Time1;Pwd=qifar@time2user;") ';Uid=sa;Pwd=sa;
-
-            '===The Following Connection Strings are used for Login in KBl Sales for Computer Name GR_SERVER
-            ''FinActConn = New SqlConnection("Server=GR_Server\SQLEXPRESS,1056;Uid=Qifar@SqlKBL;Pwd=qifar@time2user;database='" & (Db_FinAct) & "'") ' connection string for Ms-Sql Express
-            ''FinActConn1 = New SqlConnection("Server=GR_Server\SQLEXPRESS,1056;Uid=Qifar@SqlKBL;Pwd=qifar@time2user;database='" & (Db_FinAct) & "'") 'connection string for Ms-Sql Express
-            ''FinActConn2 = New SqlConnection("Server=GR_Server\SQLEXPRESS,1056;Uid=Qifar@SqlKBL;Pwd=qifar@time2user;database='" & (Db_FinAct) & "'") 'connection string for Ms-Sql Express
-            ''FinActConn3 = New SqlConnection("Server=GR_Serverr\SQLEXPRESS,1056;Uid=Qifar@SqlKBL;Pwd=qifar@time2user;database='" & (Db_FinAct) & "'") 'connection string for Ms-Sql Express
-            ''FinactOdbcCon = New Odbc.OdbcConnection("Driver={SQL Native Client};Server=GR_Server\sqlexpress,1056;database=" & (Db_FinAct) & ";Uid=Qifar@SqlKBL;Pwd=qifar@time2user;") ';Uid=sa;Pwd=sa;
-            ''FinactOdbcCon1 = New Odbc.OdbcConnection("Driver={SQL Native Client};Server=GR_Server\sqlexpress,1056;database=" & (Db_FinAct) & ";Uid=Qifar@SqlKBL;Pwd=qifar@time2user;") ';Uid=sa;Pwd=sa;
-
-            ''FinActConn = New SqlConnection("Server=Qifar_Info_786\SQLEXPRESS,1030;Uid=Qifar@SqlKBL;Pwd=qifar@time2user;database=MsSql08_FinAct_KblSales09") ' connection string for Ms-Sql Express
-            ''FinActConn1 = New SqlConnection("Server=Qifar_Info_786\SQLEXPRESS,1030;Uid=Qifar@SqlKBL;Pwd=qifar@time2user;database=MsSql08_FinAct_KblSales09") 'connection string for Ms-Sql Express
-            ''FinActConn2 = New SqlConnection("Server=Qifar_Info_786\SQLEXPRESS,1030;Uid=Qifar@SqlKBL;Pwd=qifar@time2user;database=MsSql08_FinAct_KblSales09") 'connection string for Ms-Sql Express
-            ''FinActConn3 = New SqlConnection("Server=Qifar_Info_786\SQLEXPRESS,1030;Uid=Qifar@SqlKBL;Pwd=qifar@time2user;database=MsSql08_FinAct_KblSales09") 'connection string for Ms-Sql Express
-            ''FinactOdbcCon = New Odbc.OdbcConnection("Driver={SQL Native Client};Server=Qifar_Info_786\SQLEXPRESS,1030;database=MsSql08_FinAct_KblSales09;Uid=Qifar@SqlKBL;Pwd=qifar@time2user;") ';Uid=sa;Pwd=sa;
-            ''FinactOdbcCon1 = New Odbc.OdbcConnection("Driver={SQL Native Client};Server=Qifar_Info_786\SQLEXPRESS,1030;database=MsSql08_FinAct_KblSales09;Uid=Qifar@SqlKBL;Pwd=qifar@time2user;")  ';Uid=sa;Pwd=sa;
-            ''===========================================
+           
+            FinActConn = New SqlConnection("Server='" & (SqlServerName) & "';Uid=jonnis;Pwd=###;database='" & (Db_FinAct) & "'") ' connection string for Ms-Sql Express
+            FinActConn1 = New SqlConnection("Server='" & (SqlServerName) & "';Uid=jonnis;Pwd=###;database='" & (Db_FinAct) & "'") ' connection string for Ms-Sql Express
+            FinActConn2 = New SqlConnection("Server='" & (SqlServerName) & "';Uid=jonnis;Pwd=###;database='" & (Db_FinAct) & "'") ' connection string for Ms-Sql Express
+            FinActConn3 = New SqlConnection("Server='" & (SqlServerName) & "';Uid=jonnis;Pwd=m###;database='" & (Db_FinAct) & "'") ' connection string for Ms-Sql Express
+            
 
            
         Catch ex As SqlException
