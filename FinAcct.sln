@@ -1,0 +1,36 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.35325.158
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FinAcct", "FinAcct\FinAcct.vbproj", "{2F7485F2-F1EF-4D79-8141-D2ADFC90E90A}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Qifar ERP V-09", "Qifar ERP V-09\Qifar ERP V-09.vdproj", "{317B0C28-34A7-41CB-A4FB-595C541E2062}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F7485F2-F1EF-4D79-8141-D2ADFC90E90A}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{2F7485F2-F1EF-4D79-8141-D2ADFC90E90A}.Debug|Any CPU.Build.0 = Debug|x86
+		{2F7485F2-F1EF-4D79-8141-D2ADFC90E90A}.Debug|x86.ActiveCfg = Debug|x86
+		{2F7485F2-F1EF-4D79-8141-D2ADFC90E90A}.Debug|x86.Build.0 = Debug|x86
+		{2F7485F2-F1EF-4D79-8141-D2ADFC90E90A}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F7485F2-F1EF-4D79-8141-D2ADFC90E90A}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{2F7485F2-F1EF-4D79-8141-D2ADFC90E90A}.Release|x86.ActiveCfg = Release|x86
+		{2F7485F2-F1EF-4D79-8141-D2ADFC90E90A}.Release|x86.Build.0 = Release|x86
+		{317B0C28-34A7-41CB-A4FB-595C541E2062}.Debug|Any CPU.ActiveCfg = Debug
+		{317B0C28-34A7-41CB-A4FB-595C541E2062}.Debug|x86.ActiveCfg = Debug
+		{317B0C28-34A7-41CB-A4FB-595C541E2062}.Release|Any CPU.ActiveCfg = Release
+		{317B0C28-34A7-41CB-A4FB-595C541E2062}.Release|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {64A4CC02-9292-4D98-8E0D-508B99E802BE}
+	EndGlobalSection
+EndGlobal
