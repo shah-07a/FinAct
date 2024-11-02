@@ -56,10 +56,7 @@ Module Contrl
     Public Sub FinActSqlConn()
         Try
            
-            FinActConn = New SqlConnection("Server='" & (SqlServerName) & "';Uid=jonnis;Pwd=###;database='" & (Db_FinAct) & "'") ' connection string for Ms-Sql Express
-            FinActConn1 = New SqlConnection("Server='" & (SqlServerName) & "';Uid=jonnis;Pwd=###;database='" & (Db_FinAct) & "'") ' connection string for Ms-Sql Express
-            FinActConn2 = New SqlConnection("Server='" & (SqlServerName) & "';Uid=jonnis;Pwd=###;database='" & (Db_FinAct) & "'") ' connection string for Ms-Sql Express
-            FinActConn3 = New SqlConnection("Server='" & (SqlServerName) & "';Uid=jonnis;Pwd=m###;database='" & (Db_FinAct) & "'") ' connection string for Ms-Sql Express
+          
             
 
            
@@ -68,47 +65,17 @@ Module Contrl
         End Try
     End Sub
     Public Sub FinActSqlConn1()
-        'FinActConn1 = New SqlConnection("integrated security=SSPI;data source=.;persist security info=False;initial catalog=FinAct07") ' Connection for server on nerworking mssql 2000
-        '' FinActConn1 = New SqlConnection("integrated security=SSPI;data source=.\SQLEXPRESS;persist security info=False;initial catalog=FinAct07") 'connection string for Ms-Sql Express
-        '++++
-        'Dim path As String = Application.StartupPath
-        'BnMBillingConn1 = New SqlConnection("Data Source=.\SQLEXPRESS;AttachDbFilename=path\Database1.mdf;Integrated Security=True;User Instance=True")
-        'Dim strngcon As String = GetSqlDB()
-        'BnMBillingConn1 = New SqlConnection(strngcon)
+       
 
         '++++
     End Sub
     Public Function GetSqlDB() As String
         Dim st As String = ""
-        st = "integrated security=SSPI;data source=.\SQLEXPRESS;persist security info=False;initial catalog=FinAct07"
-        ''st = "Data Source=.\SQLEXPRESS;AttachDbFilename=" & Application.StartupPath & "\Finact07.MDF;Integrated Security=True;User Instance=True;"
-        ' st = "Data Source=.\SQLEXPRESS;AttachDbFilename=" & Application.StartupPath & "\Finact07.MDF;Integrated Security=True;User Instance=True;"
-        'SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=;Integrated Security=True;Connect Timeout=30;User Instance=True");
+      
         Return st
     End Function
 
-    Public Sub FinActSqlConn2()
-        'FinActConn2 = New SqlConnection("integrated security=SSPI;data source=.;persist security info=False;initial catalog=FinAct07") ' Connection for server on nerworking mssql 2000
-        ''FinActConn2 = New SqlConnection("integrated security=SSPI;data source=.\SQLEXPRESS;persist security info=False;initial catalog=FinAct07") 'connection string for Ms-Sql Express
-    End Sub
-    Public Sub FinActSqlConn3()
-        'FinActConn3 = New SqlConnection("integrated security=SSPI;data source=.;persist security info=False;initial catalog=FinAct07") ' Connection for server on nerworking mssql 2000
-        ' FinActConn3 = New SqlConnection("workstation id=(local);packet size=4096;integrated security=SSPI;data source=.;persist security info=False;initial catalog=master")
-        '' FinActConn3 = New SqlConnection("integrated security=SSPI;data source=.\SQLEXPRESS;persist security info=False;initial catalog=FinAct07") 'connection string for Ms-Sql Express
-    End Sub
-
-    Public Sub FinactOdbcConn()
-        'FinactOdbcCon = New Odbc.OdbcConnection("Driver={SQL Native Client};Server=.\sqlexpress;Database=FinAct07;Trusted_Connection=yes;") ';Uid=sa;Pwd=sa;
-        'FinactOdbcCon = New Odbc.OdbcConnection("Driver={SQL Native Client};Server=.;Database=hrprdata08;Trusted_Connection=yes;") ';Uid=sa;Pwd=sa;
-        'FinActConn4 = New SqlConnection("integrated security=SSPI;data source=.\SQLEXPRESS;persist security info=False;initial catalog=HrPrData08") 'connection string for Ms-Sql Express
-        'FinActConn4 = New SqlConnection("Data Source=(local);Initial Catalog=HrPrData08;Integrated Security=True")
-    End Sub
-    Public Sub FinactOdbcConn1()
-        'FinactOdbcCon1 = New Odbc.OdbcConnection("Driver={SQL Native Client};Server=.\sqlexpress;Database=FinAct07;Trusted_Connection=yes;") ';Uid=sa;Pwd=sa;
-        'FinactOdbcCon1 = New Odbc.OdbcConnection("Driver={SQL Native Client};Server=.;Database=hrprdata08;Trusted_Connection=yes;") ';Uid=sa;Pwd=sa;
-        'FinActConn5 = New SqlConnection("integrated security=SSPI;data source=.\SQLEXPRESS;persist security info=False;initial catalog=HrPrData08") 'connection string for Ms-Sql Express
-        ' FinActConn5 = New SqlConnection("Data Source=(local);Initial Catalog=HrPrData08;Integrated Security=True")
-    End Sub
+    
     Public Sub CsCcmbxRecrd(ByVal CboxCty As ComboBox, ByVal CboxState As ComboBox, ByVal CboxContry As ComboBox)
         CoCmbxRecrd = New SqlCommand("Select distinct(cscctyname) from finactcscmstr order by cscctyname", FinActConn)
         CoCmBxRdr = CoCmbxRecrd.ExecuteReader
